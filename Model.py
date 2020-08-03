@@ -1,5 +1,4 @@
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import numpy as np
 import pandas as pd
 import tensorflow as tensorflow
@@ -7,10 +6,13 @@ from tensorflow import feature_column
 from tensorflow.keras import layers
 from sklearn.model_selection import train_test_split
 
+# config voor locale TF logs en het pad naar het Excel-bestand
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 PAD_NAAR_CSV = r"C:\Users\Danesh\Dropbox\HBO\JAAR 4\Afstudeerstage NiVo\Scriptiedocument\PoC\simulated_training_dataset.csv"
 
 data_frame = pd.read_csv(PAD_NAAR_CSV)
 
+# opdelen van de data in training, testing en validatie data
 train, test = train_test_split(data_frame, test_size=0.2)
 train, validation = train_test_split(train, test_size=0.2)
 
