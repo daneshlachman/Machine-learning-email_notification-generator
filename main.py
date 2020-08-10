@@ -1,4 +1,4 @@
-from Model import return_voorspelling
+from model import return_voorspelling
 import smtplib
 import ssl
 
