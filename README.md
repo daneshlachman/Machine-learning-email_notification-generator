@@ -7,4 +7,4 @@ Dit project is een proof of concept van de scriptie van Danesh Lachman over de t
 
 ## EN
 
-This project is a proof of concept from my bachelor thesis about the applicability of machine learning on log files from network equipment to generate email-notifications. In order to successfully make predictions and process them subsequently via email, the credentials from the Wifinity email address required.
+This project is a proof of concept from my bachelor thesis about the applicability of machine learning on log files from network equipment to generate email-notifications. In order to successfully make predictions and process them subsequently via email, the credentials from the Wifinity email address are required.
